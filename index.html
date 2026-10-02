@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ADDIS EATS - An Ethiopian dining experience in Addis Ababa. Traditional flavors reimagined with modern elegance.">
+  <title>ADDIS EATS Ethiopian Restaurant</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Remix Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <!-- Logo -->
+      <a href="#home" class="brand-logo" aria-label="ADDIS EATS Home">
+        <div class="logo-icon-wrap">
+          <i class="ri-goblet-line"></i>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-main">ADDIS <span>EATS</span></span>
+          <span class="logo-sub">Addis Ababa &bull; Est. 2018</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-gold btn-sm btn-header-book">
+          <i class="ri-calendar-check-line"></i> Book a Table
+        </a>
+        <button class="cart-button" id="cartBtn" aria-label="View Order Cart">
+          <i class="ri-shopping-bag-3-line"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Responsive Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-link"><span>Home</span> <i class="ri-arrow-right-s-line"></i></a>
+      <a href="#menu" class="mobile-nav-link"><span>Menu</span> <i class="ri-arrow-right-s-line"></i></a>
+      <a href="#about" class="mobile-nav-link"><span>About</span> <i class="ri-arrow-right-s-line"></i></a>
+      <a href="#location" class="mobile-nav-link"><span>Location</span> <i class="ri-arrow-right-s-line"></i></a>
+      <a href="#contact" class="mobile-nav-link"><span>Contact</span> <i class="ri-arrow-right-s-line"></i></a>
+    </div>
+    <div class="mobile-nav-actions">
+      <a href="#contact" class="btn btn-gold mobile-nav-close-trigger">
+        <i class="ri-calendar-check-line"></i> Book a Table
+      </a>
+      <a href="#menu" class="btn btn-outline-white mobile-nav-close-trigger">
+        <i class="ri-restaurant-2-line"></i> Explore Menu
+      </a>
+    </div>
+  </div>
+
+  <main>
+
+    <!--Hero section-->
+    <section class="hero-section" id="home">
+      <div class="hero-background" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-pattern-mesh" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="ri-shining-fill"></i> Premier Ethiopian Fine Dining
+          </div>
+
+          <h1 class="hero-title">
+            Experience the Taste of <span>Addis</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Traditional Ethiopian flavors, reimagined with modern elegance.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-gold">
+              <i class="ri-restaurant-line"></i> Explore Menu
+            </a>
+            <a href="#menu" class="btn btn-emerald" id="heroOrderNowBtn">
+              <i class="ri-shopping-cart-2-line"></i> Order Now
+            </a>
+            <a href="#contact" class="btn btn-outline-white">
+              <i class="ri-calendar-line"></i> Book a Table
+            </a>
+          </div>
+
+          <div class="hero-features">
+            <div class="hero-feature-item">
+              <i class="ri-seedling-line"></i>
+              <span>100% Pure Ingredients</span>
+            </div>
+            <div class="hero-feature-item">
+              <i class="ri-fire-line"></i>
+              <span>Artisan Aged Seasoning</span>
+            </div>
+            <div class="hero-feature-item">
+              <i class="ri-cup-line"></i>
+              <span>Jebena Ceremony Ritual</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ethiopian-pattern-line" aria-hidden="true"></div>
+
+    <section class="promo-section" id="promo">
+      <div class="container">
+        <div class="promo-card">
+          <div class="promo-info">
+            <div class="promo-tag">
+              <i class="ri-gift-line"></i> Exclusive Privilege
+            </div>
+            <h2 class="promo-title">
+              Order four Dishes, <span>Get One Free</span>
+            </h2>
+            <p class="promo-desc">
+              Celebrate the art of communal dining. Select any four signature main courses this season and receive an authentic vegetarian delicacy or handcrafted appetizer compliments of our Executive Chef.
+            </p>
+          </div>
+          <div class="promo-cta-group">
+            <a href="#menu" class="btn btn-gold">
+              <i class="ri-sparkling-2-line"></i> Claim Offer
+            </a>
+            <span class="promo-terms">* Available for dine-in and private dining reservations.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Culinary Masterpieces</span>
+          <h2 class="section-title">The Curated Menu</h2>
+          <p class="section-desc">
+            Each dish celebrates the culinary heritage of the Ethiopia, prepared with cold-pressed niter kibbeh, indigenous spices, and modern gastronomic finesse.
+          </p>
+        </div>
+
+        <div class="menu-layout-container" id="menuLayoutContainer">
+          
+          <div class="menu-main-column">
+            <!-- Menu Search Bar -->
+            <div class="menu-search-container">
+              <div class="menu-search-wrapper">
+                <i class="ri-search-line menu-search-icon"></i>
+                <input 
+                  type="text" 
+                  id="menuSearchInput" 
+                  class="menu-search-input" 
+                  placeholder="Search dishes..." 
+                  autocomplete="off"
+                  aria-label="Search dishes"
+                >
+                <button type="button" id="menuSearchClear" class="menu-search-clear" aria-label="Clear search">
+                  <i class="ri-close-line"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Menu Filter Buttons: All, Spicy, Vegan, Non-Vegan, Main Dishes, Favorites -->
+            <div class="menu-filter-nav" id="menuFilterNav">
+              <button class="menu-filter-btn active" data-filter="all">
+                <i class="ri-apps-2-line"></i> All
+              </button>
+              <button class="menu-filter-btn" data-filter="spicy">
+                <i class="ri-fire-fill"></i> Spicy
+              </button>
+              <button class="menu-filter-btn" data-filter="vegan">
+                <i class="ri-leaf-line"></i> Vegan
+              </button>
+              <button class="menu-filter-btn" data-filter="non-vegan">
+                <i class="ri-restaurant-line"></i> Non-Vegan
+              </button>
+              <button class="menu-filter-btn" data-filter="main-dishes">
+                <i class="ri-award-line"></i> Main Dishes
+              </button>
+              <button type="button" class="menu-filter-btn" data-filter="favorites">
+                <i class="ri-heart-line"></i> Favorites
+              </button>
+            </div>
+
+            <!-- Dynamic Menu Grid Container (Populated via fetch() from menu.json) -->
+            <div class="menu-grid" id="menuGrid">
+              <!-- Loading State is displayed here initially -->
+              <div class="menu-status-state" id="menuLoading">
+                <div class="menu-spinner"></div>
+                <p class="menu-status-text">Loading our menu...</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Shopping Cart -->
+          <aside class="cart-sidebar" id="cartSidebar" aria-label="Order Cart">
+            <div class="cart-header">
+              <div class="cart-header-title-wrap">
+                <i class="ri-shopping-bag-3-line cart-header-icon"></i>
+                <h3 class="cart-header-title">Your Order</h3>
+              </div>
+              <span class="cart-header-count" id="cartSidebarCount">0 items</span>
+            </div>
+
+            <!-- Cart Items List (Dynamic via app.js) -->
+            <div class="cart-items-container" id="cartItemsList">
+              <div class="cart-empty-view">
+                <i class="ri-shopping-bag-3-line cart-empty-icon"></i>
+                <p class="cart-empty-text">Your cart is empty.</p>
+              </div>
+            </div>
+
+            <!-- Cart Summary: Subtotal, Total -->
+            <div class="cart-summary" id="cartSummary">
+              <div class="cart-summary-row">
+                <span class="cart-summary-label">Subtotal</span>
+                <span class="cart-summary-value" id="cartSubtotal">0 ETB</span>
+              </div>
+              <div class="cart-summary-row total-row">
+                <span class="cart-summary-label">Total</span>
+                <span class="cart-summary-value" id="cartTotal">0 ETB</span>
+              </div>
+            </div>
+
+            <!-- Service Selection Section (Only visible when cart has at least one item) -->
+            <div class="service-selection-section" id="serviceSelectionSection" style="display: none;">
+              <div class="service-selection-header">
+                <h4 class="service-selection-title">How would you like to receive your order?</h4>
+              </div>
+
+              <!-- THREE SERVICE OPTIONS: Dine In, Delivery, Take Away -->
+              <div class="service-options-grid" id="serviceOptionsGrid">
+                <!-- 1. Dine In -->
+                <button type="button" class="service-option-card" data-service="dine-in" id="btnServiceDineIn">
+                  <div class="service-icon-wrap">
+                    <i class="ri-restaurant-line"></i>
+                  </div>
+                  <div class="service-info-wrap">
+                    <span class="service-name">Dine In</span>
+                    <span class="service-tagline">Enjoy your meal at Addis Eats.</span>
+                  </div>
+                  <i class="ri-checkbox-circle-fill service-check-icon"></i>
+                </button>
+
+                <!-- 2. Delivery -->
+                <button type="button" class="service-option-card" data-service="delivery" id="btnServiceDelivery">
+                  <div class="service-icon-wrap">
+                    <i class="ri-truck-line"></i>
+                  </div>
+                  <div class="service-info-wrap">
+                    <span class="service-name">Delivery</span>
+                    <span class="service-tagline">Have your order delivered to you.</span>
+                  </div>
+                  <i class="ri-checkbox-circle-fill service-check-icon"></i>
+                </button>
+
+                <!-- 3. Take Away -->
+                <button type="button" class="service-option-card" data-service="take-away" id="btnServiceTakeAway">
+                  <div class="service-icon-wrap">
+                    <i class="ri-shopping-bag-3-line"></i>
+                  </div>
+                  <div class="service-info-wrap">
+                    <span class="service-name">Take Away</span>
+                    <span class="service-tagline">Pick up your order and enjoy it elsewhere.</span>
+                  </div>
+                  <i class="ri-checkbox-circle-fill service-check-icon"></i>
+                </button>
+              </div>
+
+              <!-- SERVICE FORMS CONTAINER  -->
+              <div class="service-forms-container" id="serviceFormsContainer">
+
+                <!-- =========================================================
+                     1. DINE IN FORM
+                     ========================================================= -->
+                <form class="service-form" id="dineInForm" style="display: none;" novalidate>
+                  <div class="service-form-header">
+                    <h4 class="service-form-title">Dine In Details</h4>
+                    <span class="service-form-tag"><i class="ri-restaurant-line"></i> Table Service</span>
+                  </div>
+
+                  <div class="service-form-fields">
+                    <div class="form-group">
+                      <label for="dineName" class="service-field-label">Full Name *</label>
+                      <input type="text" id="dineName" class="form-control service-input" placeholder="Please enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="dinePhone" class="service-field-label">Phone Number *</label>
+                      <input type="tel" id="dinePhone" class="form-control service-input" placeholder="Please enter your phone number" required>
+                    </div>
+
+                    <div class="form-group-split">
+                      <div class="form-group">
+                        <label for="dineDate" class="service-field-label">Date *</label>
+                        <input type="date" id="dineDate" class="form-control service-input" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="dineTime" class="service-field-label">Time *</label>
+                        <select id="dineTime" class="form-control service-input" required>
+                          <option value="12:00 PM">12:00 PM</option>
+                          <option value="01:00 PM">01:00 PM</option>
+                          <option value="02:30 PM">02:30 PM</option>
+                          <option value="06:30 PM" selected>06:30 PM</option>
+                          <option value="07:30 PM">07:30 PM</option>
+                          <option value="08:30 PM">08:30 PM</option>
+                          <option value="09:30 PM">09:30 PM</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group-split">
+                      <div class="form-group">
+                        <label for="dineGuests" class="service-field-label">Number of Guests *</label>
+                        <select id="dineGuests" class="form-control service-input" required>
+                          <option value="1">1 Guest</option>
+                          <option value="2" selected>2 Guests</option>
+                          <option value="3">3 Guests</option>
+                          <option value="4">4 Guests</option>
+                          <option value="5-6">5-6 Guests</option>
+                          <option value="7+">7+ Guests</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="dinePreference" class="service-field-label">Table Preference *</label>
+                        <select id="dinePreference" class="form-control service-input" required>
+                          <option value="Indoor" selected>Indoor</option>
+                          <option value="Outdoor">Outdoor</option>
+                          <option value="No Preference">No Preference</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="dineRequest" class="service-field-label">Special Request</label>
+                      <textarea id="dineRequest" class="form-control service-input service-textarea" placeholder="Seating request, dietary notes, or celebration..."></textarea>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-gold btn-service-submit" id="btnConfirmDineIn">
+                    <i class="ri-check-line"></i> Confirm Dine In Order
+                  </button>
+                </form>
+
+                <!-- =========================================================
+                     2. DELIVERY FORM
+                     ========================================================= -->
+                <form class="service-form" id="deliveryForm" style="display: none;" novalidate>
+                  <div class="service-form-header">
+                    <h4 class="service-form-title">Delivery Details</h4>
+                    <span class="service-form-tag"><i class="ri-truck-line"></i> Direct Courier</span>
+                  </div>
+
+                  <div class="service-form-fields">
+                    <div class="form-group">
+                      <label for="delivName" class="service-field-label">Full Name *</label>
+                      <input type="text" id="delivName" class="form-control service-input" placeholder="Please enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="delivPhone" class="service-field-label">Phone Number *</label>
+                      <input type="tel" id="delivPhone" class="form-control service-input" placeholder="Please enter your phone number" required>
+                    </div>
+
+                    <div class="form-group-split">
+                      <div class="form-group">
+                        <label for="delivCity" class="service-field-label">City *</label>
+                        <input type="text" id="delivCity" class="form-control service-input" value="Addis Ababa" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="delivArea" class="service-field-label">Area / Sub-City *</label>
+                        <input type="text" id="delivArea" class="form-control service-input" placeholder="Please enter your area" required>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="delivStreet" class="service-field-label">Street / Location *</label>
+                      <input type="text" id="delivStreet" class="form-control service-input" placeholder="Please enter your street or location" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="delivBuilding" class="service-field-label">House Number / Building *</label>
+                      <input type="text" id="delivBuilding" class="form-control service-input" placeholder="Please enter your house number or building" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="delivInstructions" class="service-field-label">Delivery Instructions</label>
+                      <input type="text" id="delivInstructions" class="form-control service-input" placeholder="Please enter any delivery instructions">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="delivTime" class="service-field-label">Preferred Delivery Time *</label>
+                      <select id="delivTime" class="form-control service-input" required>
+                        <option value="ASAP (35-50 mins)" selected>ASAP (35-50 mins)</option>
+                        <option value="Within 1 hour">Within 1 hour</option>
+                        <option value="12:30 PM">12:30 PM (Lunch)</option>
+                        <option value="01:30 PM">01:30 PM (Lunch)</option>
+                        <option value="06:30 PM">06:30 PM (Dinner)</option>
+                        <option value="07:30 PM">07:30 PM (Dinner)</option>
+                        <option value="08:30 PM">08:30 PM (Dinner)</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="delivRequest" class="service-field-label">Special Request</label>
+                      <textarea id="delivRequest" class="form-control service-input service-textarea" placeholder="Please enter any special requests or preferences"></textarea>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-gold btn-service-submit" id="btnConfirmDelivery">
+                    <i class="ri-check-line"></i> Confirm Delivery Order
+                  </button>
+                </form>
+
+                <!-- =========================================================
+                     3. TAKE AWAY FORM
+                     ========================================================= -->
+                <form class="service-form" id="takeAwayForm" style="display: none;" novalidate>
+                  <div class="service-form-header">
+                    <h4 class="service-form-title">Take Away Details</h4>
+                    <span class="service-form-tag"><i class="ri-shopping-bag-3-line"></i> Restaurant Pickup</span>
+                  </div>
+
+                  <div class="service-form-fields">
+                    <div class="form-group">
+                      <label for="takeName" class="service-field-label">Full Name *</label>
+                      <input type="text" id="takeName" class="form-control service-input" placeholder="Please enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="takePhone" class="service-field-label">Phone Number *</label>
+                      <input type="tel" id="takePhone" class="form-control service-input" placeholder="Please enter your phone number" required>
+                    </div>
+
+                    <div class="form-group-split">
+                      <div class="form-group">
+                        <label for="takeDate" class="service-field-label">Pickup Date *</label>
+                        <input type="date" id="takeDate" class="form-control service-input" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="takeTime" class="service-field-label">Pickup Time *</label>
+                        <select id="takeTime" class="form-control service-input" required>
+                          <option value="In 20-30 mins" selected>In 20-30 mins</option>
+                          <option value="In 45 mins">In 45 mins</option>
+                          <option value="12:30 PM">12:30 PM</option>
+                          <option value="01:30 PM">01:30 PM</option>
+                          <option value="06:30 PM">06:30 PM</option>
+                          <option value="07:30 PM">07:30 PM</option>
+                          <option value="08:30 PM">08:30 PM</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="takeRequest" class="service-field-label">Special Request</label>
+                      <textarea id="takeRequest" class="form-control service-input service-textarea" placeholder="Please enter any special requests or preferences"></textarea>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-gold btn-service-submit" id="btnConfirmTakeAway">
+                    <i class="ri-check-line"></i> Confirm Take Away Order
+                  </button>
+                </form>
+
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         ABOUT SECTION
+         ======================================================================= -->
+    <section class="section section-dark about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-collage">
+            <img 
+              src="images/hero.jpg" 
+              alt="ADDIS EATS Luxury Dining Interior" 
+              class="about-img-main"
+              loading="lazy"
+            >
+            <div class="about-card-stat">
+              <div class="about-stat-number">#1</div>
+              <div class="about-stat-label">Luxury Ethiopian Gastronomy in Addis Ababa</div>
+            </div>
+          </div>
+
+          <!-- Right: Text Content -->
+          <div class="about-text-content">
+            <span class="section-eyebrow">Our Heritage</span>
+            <h2 class="section-title light">About Addis Eats</h2>
+            <p class="section-desc light">
+              Addis Eats brings together the warmth of Ethiopian hospitality and the elegance of modern dining. Our kitchen celebrates traditional flavors while presenting every dish with care and creativity.
+            </p>
+            
+            <!-- Four Feature Cards -->
+            <div class="about-pillars">
+              <div class="about-pillar-item">
+                <i class="ri-fire-line" aria-hidden="true"></i>
+                <h3 class="about-pillar-title">Authentic Flavors</h3>
+                <p class="about-pillar-desc">Time-honored recipes perfected with native organic spices, berbere, and traditional slow simmering.</p>
+              </div>
+
+              <div class="about-pillar-item">
+                <i class="ri-leaf-line" aria-hidden="true"></i>
+                <h3 class="about-pillar-title">Fresh Ingredients</h3>
+                <p class="about-pillar-desc">Locally sourced highland herbs, 100% pure teff, and natural highland butter delivered daily.</p>
+              </div>
+
+              <div class="about-pillar-item">
+                <i class="ri-award-line" aria-hidden="true"></i>
+                <h3 class="about-pillar-title">Expert Chefs</h3>
+                <p class="about-pillar-desc">Master culinary artisans combining generational mastery with contemporary fine-dining presentation.</p>
+              </div>
+
+              <div class="about-pillar-item">
+                <i class="ri-heart-line" aria-hidden="true"></i>
+                <h3 class="about-pillar-title">Warm Hospitality</h3>
+                <p class="about-pillar-desc">The authentic spirit of Ethiopian Gursha, where every guest is welcomed as cherished family.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         LOCATION & HOURS SECTION
+         ======================================================================= -->
+    <section class="section location-section" id="location">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Where To Find Us</span>
+          <h2 class="section-title">Visit Us</h2>
+          <p class="section-desc">
+            Experience the finest Ethiopian dining on the third floor of Zefmesh Grand Mall in vibrant Megenagna, Addis Ababa.
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <!-- Address & Hours Info -->
+          <div class="location-info-card">
+            <div>
+              <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--color-black); margin-bottom: 8px;">
+                Concierge & Visiting Details
+              </h3>
+              <p style="color: var(--color-text-muted); font-size: 0.9375rem;">
+                We warmly welcome you for lunch, afternoon coffee rituals, and lavish dinner services.
+              </p>
+
+              <div class="location-detail-list">
+                <div class="location-detail-item">
+                  <div class="location-detail-icon">
+                    <i class="ri-map-pin-2-line" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h4 class="location-detail-title">Address</h4>
+                    <p class="location-detail-text">
+                      Megenagna, Zefmesh Grand Mall,<br>
+                      Third Floor,<br>
+                      Addis Ababa, Ethiopia
+                    </p>
+                  </div>
+                </div>
+
+                <div class="location-detail-item">
+                  <div class="location-detail-icon">
+                    <i class="ri-time-line" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h4 class="location-detail-title">Opening Hours</h4>
+                    <p class="location-detail-text">
+                      Monday &ndash; Sunday<br>
+                      10:00 AM &ndash; 10:00 PM
+                    </p>
+                  </div>
+                </div>
+
+                <div class="location-detail-item">
+                  <div class="location-detail-icon">
+                    <i class="ri-phone-line" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h4 class="location-detail-title">Direct Inquiries</h4>
+                    <p class="location-detail-text">
+                      <a href="tel:+251911111111" style="color: var(--color-emerald); font-weight: 600;">+251 911 111 111</a><br>
+                      <a href="mailto:addiseats@info.com" style="color: var(--color-text-muted);">addiseats@info.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-emerald" style="width: 100%;">
+              <i class="ri-mail-send-line"></i> Contact Concierge
+            </a>
+          </div>
+
+          <!-- Luxury Interactive Map Simulation Card -->
+          <div class="location-map-visual">
+            <div class="map-ambient-bg" aria-hidden="true"></div>
+            <div class="map-header">
+              <div class="map-pin-pulse">
+                <span class="pulse-dot"></span> Megenagna, Addis Ababa
+              </div>
+              <h3 class="map-card-address">
+                <i class="ri-map-pin-2-line map-main-pin" aria-hidden="true"></i> ADDIS EATS Sanctuary
+              </h3>
+              <p class="map-card-desc">
+                Megenagna, Zefmesh Grand Mall, Third Floor, Addis Ababa, Ethiopia. Easy access with indoor parking and luxury elevator to the third floor.
+              </p>
+            </div>
+
+            <div class="map-amenities">
+              <span class="amenity-chip"><i class="ri-parking-box-line"></i> Mall Parking</span>
+              <span class="amenity-chip"><i class="ri-wifi-line"></i> High-Speed WiFi</span>
+              <span class="amenity-chip"><i class="ri-vip-crown-line"></i> VIP Dining Salon</span>
+              <span class="amenity-chip"><i class="ri-music-2-line"></i> Traditional Krar Ambiance</span>
+            </div>
+
+            <a 
+              href="https://maps.google.com/?q=Zefmesh+Grand+Mall+Megenagna+Addis+Ababa" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn btn-outline-gold"
+            >
+              <i class="ri-map-pin-2-line"></i> Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CONTACT & INQUIRIES SECTION
+         ======================================================================= -->
+    <section class="section section-dark contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Connect With Us</span>
+          <h2 class="section-title light">Get in Touch</h2>
+          <p class="section-desc light">
+            We would love to hear from you. Send us an inquiry, give feedback, or reach out to our guest concierge team.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Info -->
+          <div class="contact-brief">
+            <div class="contact-highlight-box">
+              <h4><i class="ri-phone-line"></i> Phone</h4>
+              <p>
+                Direct concierge line for inquiries and reservations:
+                <strong style="display: block; color: var(--color-gold); margin-top: 6px; font-size: 1.05rem;">
+                  <a href="tel:+251911111111" style="color: var(--color-gold);">+251 911 111 111</a>
+                </strong>
+              </p>
+            </div>
+
+            <div class="contact-highlight-box">
+              <h4><i class="ri-mail-line"></i> Email</h4>
+              <p>
+                Reach our guest relations team directly:
+                <strong style="display: block; color: var(--color-gold); margin-top: 6px; font-size: 1.05rem;">
+                  <a href="mailto:addiseats@info.com" style="color: var(--color-gold);">addiseats@info.com</a>
+                </strong>
+              </p>
+            </div>
+
+            <div class="contact-highlight-box">
+              <h4><i class="ri-map-pin-2-line"></i> Location</h4>
+              <p>
+                Megenagna, Zefmesh Grand Mall,<br>
+                Third Floor,<br>
+                Addis Ababa, Ethiopia
+              </p>
+            </div>
+
+            <div class="contact-highlight-box">
+              <h4><i class="ri-time-line"></i> Opening Hours</h4>
+              <p>
+                Monday &ndash; Sunday<br>
+                10:00 AM &ndash; 10:00 PM
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="reservation-form-card contact-form-card">
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--color-cream); margin-bottom: 6px;">
+              Send Us a Message
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--color-text-muted-light); margin-bottom: 24px;">
+              Leave your details and message below. We will respond promptly.
+            </p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-group" style="margin-bottom: 18px;">
+                <label for="cfName" class="form-label">Name *</label>
+                <input type="text" id="cfName" class="form-control" placeholder="Please enter your full name" required>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 18px;">
+                <label for="cfEmail" class="form-label">Email *</label>
+                <input type="email" id="cfEmail" class="form-control" placeholder="Please enter your email address" required>
+              </div>
+
+              <div class="form-group full-width" style="margin-bottom: 24px;">
+                <label for="cfMessage" class="form-label">Message *</label>
+                <textarea id="cfMessage" class="form-control" rows="5" placeholder="Please enter your message" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold" id="btnSendMessage" style="width: 100%;">
+                <i class="ri-send-plane-fill"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <div class="logo-icon-wrap">
+              <i class="ri-goblet-line"></i>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-main">ADDIS <span>EATS</span></span>
+              <span class="logo-sub">Fine Ethiopian Dining</span>
+            </div>
+          </a>
+          <blockquote class="footer-quote">
+            "A Taste of Addis, Served with Elegance."
+          </blockquote>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="https://t.me" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram"><i class="ri-telegram-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Service Hours -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Opening Hours</h4>
+          <div class="footer-hours-list">
+            <div class="footer-hours-row">
+              <span>Monday &ndash; Sunday</span>
+              <span>10:00 AM &ndash; 10:00 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span>Lunch Service</span>
+              <span>11:30 AM &ndash; 03:30 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span>Dinner Service</span>
+              <span>06:00 PM &ndash; 10:00 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span>Coffee Ceremony</span>
+              <span>Daily from 02:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact info -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <p class="footer-address">
+            Megenagna, Zefmesh Grand Mall,<br>
+            Third Floor,<br>
+            Addis Ababa, Ethiopia
+          </p>
+          <p class="footer-contact-item">
+            <a href="tel:+251911111111"><i class="ri-phone-fill"></i> +251 911 111 111</a>
+          </p>
+          <p class="footer-contact-item">
+            <a href="mailto:addiseats@info.com"><i class="ri-mail-line"></i> addiseats@info.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Addis Eats. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Dining</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       BOOK A TABLE PREMIUM MODAL
+       ======================================================================= -->
+  <div class="modal-backdrop" id="bookingModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="closeBookingModalBtn" aria-label="Close booking modal">
+        <i class="ri-close-line"></i>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-header-icon">
+          <i class="ri-calendar-check-line"></i>
+        </div>
+        <h3 class="modal-title" id="bookingModalTitle">Book a Table</h3>
+        <p class="modal-subtitle">Reserve your fine-dining experience at ADDIS EATS.</p>
+      </div>
+
+      <form id="tableBookingModalForm" class="modal-form" novalidate>
+        <div class="modal-form-grid">
+          <div class="form-group">
+            <label for="bmName" class="service-field-label">Full Name *</label>
+            <input type="text" id="bmName" class="form-control service-input" placeholder="Please enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="bmPhone" class="service-field-label">Phone Number *</label>
+            <input type="tel" id="bmPhone" class="form-control service-input" placeholder="Please enter your phone number" required>
+          </div>
+
+          <div class="form-group-split">
+            <div class="form-group">
+              <label for="bmDate" class="service-field-label">Date *</label>
+              <input type="date" id="bmDate" class="form-control service-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="bmTime" class="service-field-label">Time *</label>
+              <select id="bmTime" class="form-control service-input" required>
+                <option value="12:30 PM">12:30 PM (Lunch)</option>
+                <option value="02:00 PM">02:00 PM (Lunch)</option>
+                <option value="06:30 PM" selected>06:30 PM (Dinner)</option>
+                <option value="07:30 PM">07:30 PM (Dinner)</option>
+                <option value="08:30 PM">08:30 PM (Dinner)</option>
+                <option value="09:30 PM">09:30 PM (Late Dinner)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bmGuests" class="service-field-label">Number of Guests *</label>
+            <select id="bmGuests" class="form-control service-input" required>
+              <option value="1 Guest">1 Guest</option>
+              <option value="2 Guests" selected>2 Guests (Intimate Table)</option>
+              <option value="3 Guests">3 Guests</option>
+              <option value="4 Guests">4 Guests (Family Feast)</option>
+              <option value="5-6 Guests">5-6 Guests</option>
+              <option value="7+ Guests">7+ Guests (Private Salon)</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="bmRequest" class="service-field-label">Special Request</label>
+            <textarea id="bmRequest" class="form-control service-input service-textarea" placeholder="Dietary restrictions, anniversary celebration, terrace seating..."></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-modal-submit" id="btnSubmitBooking">
+          <i class="ri-check-line"></i> Confirm Booking
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       REUSABLE SUCCESS MODAL
+       ======================================================================= -->
+  <div class="modal-backdrop" id="successModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="successModalTitle">
+    <div class="modal-dialog modal-dialog-success">
+      <button type="button" class="modal-close-btn" id="closeSuccessModalBtn" aria-label="Close success modal">
+        <i class="ri-close-line"></i>
+      </button>
+
+      <!-- Animated Success Icon with ri-check-line -->
+      <div class="success-icon-wrap">
+        <div class="success-icon-ring" aria-hidden="true"></div>
+        <i class="ri-check-line success-check-icon" aria-hidden="true"></i>
+      </div>
+
+      <!-- Dynamic Title & Subtitle -->
+      <h3 class="modal-title success-title" id="successModalTitle">Order Confirmed!</h3>
+      <p class="modal-subtitle success-message" id="successModalMessage">Thank you. Your order has been received.</p>
+
+      <!-- Dynamic Details Card (Service, Order Items breakdown, Total) -->
+      <div class="success-details-card" id="successDetailsCard">
+        <!-- Injected dynamically by app.js -->
+      </div>
+
+      <button type="button" class="btn btn-gold btn-modal-done" id="successDoneBtn">
+        <i class="ri-check-line"></i> Done
+      </button>
+    </div>
+  </div>
+
+  <!-- Interactive Toast Notification Element -->
+  <div class="toast-notice" id="toastNotice" role="alert" aria-live="polite">
+    <i class="ri-notification-3-line toast-icon" id="toastIcon"></i>
+    <span class="toast-message" id="toastMessage">Item added to order.</span>
+  </div>
+
+  <!-- Vanilla JavaScript Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>

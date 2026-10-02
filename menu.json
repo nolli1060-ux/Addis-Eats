@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Pasta",
+    "category": "Vegan",
+    "price": 350,
+    "spicy": false,
+    "mainDish": false,
+    "image": "images/pasta.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Bula",
+    "category": "Vegan",
+    "price": 500,
+    "spicy": false,
+    "mainDish": true,
+    "image": "images/Bula.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Chikina Tibs",
+    "category": "Non-Vegan",
+    "price": 1500,
+    "spicy": true,
+    "mainDish": false,
+    "image": "images/chikina-tibs.png"
+  },
+  {
+    "id": 4,
+    "name": "Dulet",
+    "category": "Non-Vegan",
+    "price": 950,
+    "spicy": false,
+    "mainDish": true,
+    "image": "images/dulet.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Kikil",
+    "category": "Non-Vegan",
+    "price": 1200,
+    "spicy": false,
+    "mainDish": true,
+    "image": "images/kikil.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Salad",
+    "category": "Vegan",
+    "price": 500,
+    "spicy": false,
+    "mainDish": false,
+    "image": "images/salad.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Ertib",
+    "category": "Vegan",
+    "price": 150,
+    "spicy": true,
+    "mainDish": false,
+    "image": "images/ertib.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Tegabino",
+    "category": "Vegan",
+    "price": 350,
+    "spicy": false,
+    "mainDish": true,
+    "image": "images/tegabino.jpg"
+  }
+]
